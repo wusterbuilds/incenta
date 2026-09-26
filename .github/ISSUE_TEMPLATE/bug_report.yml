@@ -1,0 +1,27 @@
+name: Bug report
+description: Report reproducible unexpected behavior using the synthetic demo.
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Do not attach real pro formas, credentials, or client data.
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction steps
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, Excel version, Node version, and commit.
+    validations:
+      required: true
